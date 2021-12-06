@@ -1,0 +1,104 @@
+body {
+  // store theme color variables
+  --store-theme-base-color: #3a506b;
+  --store-theme-primary-text-color: #ffffff;
+  --store-theme-secondary-text-color: #60667a;
+  --store-theme-tertiary-text-color: #777c8d;
+  --store-theme-primary-text-color-alternate: #0b132b;
+  --store-theme-secondary-text-color-alternate: #9da1aa;
+  --store-theme-primary-background-color: #0b132b;
+  --store-theme-secondary-background-color: #1c2541;
+  --store-theme-tertiary-background-color: #242e4b;
+  --store-theme-primary-accent-color: #6fffe9;
+  --store-theme-secondary-accent-color: #5bc0be;
+  --store-theme-tertiary-accent-color: #3d898a;
+  --store-theme-success-color: #6fffe9;
+  --store-theme-error-color: #ef476f;
+  --store-theme-warning-color: #e9ae44;
+  --store-theme-info-color: #5ab4ff;
+  --store-theme-disabled-color: #60667a;
+  --store-theme-disabled-stroke-color: #777c8d;
+  --store-theme-disabled-background-color: #1c2541;
+  --store-theme-danger-color: #ef476f;
+  --store-theme-danger-color-alternate: #e65f7f;
+
+  // company theme color variables
+  --company-theme-base-color: #191919;
+  --company-theme-primary-text-color: #ffffff;
+  --company-theme-secondary-text-color: #707070;
+  --company-theme-tertiary-text-color: #777c8d;
+  --company-theme-primary-text-color-alternate: #0b132b;
+  --company-theme-secondary-text-color-alternate: #9da1aa;
+  --company-theme-primary-background-color: #121212;
+  --company-theme-secondary-background-color: #202020;
+  --company-theme-tertiary-background-color: #292727;
+  --company-theme-primary-accent-color: #c38fff;
+  --company-theme-secondary-accent-color: #a662f5;
+  --company-theme-tertiary-accent-color: #8c34f1;
+  --company-theme-success-color: #6fffe9;
+  --company-theme-error-color: #ef476f;
+  --company-theme-warning-color: #e9ae44;
+  --company-theme-info-color: #5ab4ff;
+  --company-theme-disabled-color: #60667a;
+  --company-theme-disabled-stroke-color: #777c8d;
+  --company-theme-disabled-background-color: #1c2541;
+  --company-theme-danger-color: #ef476f;
+  --company-theme-danger-color-alternate: #e65f7f;
+
+  &.store-theme {
+    --base-color: var(--store-theme-base-color);
+    --primary-text-color: var(--store-theme-primary-text-color);
+    --secondary-text-color: var(--store-theme-secondary-text-color);
+    --tertiary-text-color: var(--store-theme-tertiary-text-color);
+    --primary-text-color-alternate: var(
+      --store-theme-primary-text-color-alternate
+    );
+    --secondary-text-color-alternate: var(
+      --store-theme-secondary-text-color-alternate
+    );
+    --primary-background-color: var(--store-theme-primary-background-color);
+    --secondary-background-color: var(--store-theme-secondary-background-color);
+    --tertiary-background-color: var(--store-theme-tertiary-background-color);
+    --primary-accent-color: var(--store-theme-primary-accent-color);
+    --secondary-accent-color: var(--store-theme-secondary-accent-color);
+    --tertiary-accent-color: var(--store-theme-tertiary-accent-color);
+    --success-color: var(--store-theme-success-color);
+    --error-color: var(--store-theme-error-color);
+    --warning-color: var(--store-theme-warning-color);
+    --info-color: var(--store-theme-info-color);
+    --disabled-color: var(--store-theme-disabled-color);
+    --disabled-stroke-color: var(--store-theme-disabled-stroke-color);
+    --disabled-background-color: var(--store-theme-disabled-background-color);
+    --danger-color: var(--store-theme-danger-color);
+    --danger-color-alternate: var(--store-theme-danger-color-alternate);
+  }
+  &.company-theme {
+    --base-color: var(--company-theme-base-color);
+    --primary-text-color: var(--company-theme-primary-text-color);
+    --secondary-text-color: var(--company-theme-secondary-text-color);
+    --tertiary-text-color: var(--company-theme-tertiary-text-color);
+    --primary-text-color-alternate: var(
+      --company-theme-primary-text-color-alternate
+    );
+    --secondary-text-color-alternate: var(
+      --company-theme-secondary-text-color-alternate
+    );
+    --primary-background-color: var(--company-theme-primary-background-color);
+    --secondary-background-color: var(
+      --company-theme-secondary-background-color
+    );
+    --tertiary-background-color: var(--company-theme-tertiary-background-color);
+    --primary-accent-color: var(--company-theme-primary-accent-color);
+    --secondary-accent-color: var(--company-theme-secondary-accent-color);
+    --tertiary-accent-color: var(--company-theme-tertiary-accent-color);
+    --success-color: var(--company-theme-success-color);
+    --error-color: var(--company-theme-error-color);
+    --warning-color: var(--company-theme-warning-color);
+    --info-color: var(--company-theme-info-color);
+    --disabled-color: var(--company-theme-disabled-color);
+    --disabled-stroke-color: var(--company-theme-disabled-stroke-color);
+    --disabled-background-color: var(--company-theme-disabled-background-color);
+    --danger-color: var(--company-theme-danger-color);
+    --danger-color-alternate: var(--company-theme-danger-color-alternate);
+  }
+}

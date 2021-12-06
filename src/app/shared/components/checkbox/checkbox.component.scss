@@ -1,0 +1,79 @@
+@import "colours";
+
+.checkbox {
+  cursor: default;
+  display: flex;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  input[type="checkbox"] {
+    position: absolute;
+    left: 0;
+    opacity: 0;
+
+    &:focus:not(:disabled),
+    &:hover:not(:disabled) {
+      outline: none;
+
+      + .checkbox__label .checkbox__ui:not(.is-checked) {
+        fill: var(--primary-text-color);
+        border-color: var(--primary-accent-color);
+      }
+    }
+  }
+
+  &__ui {
+    flex: 0 0 17px;
+    background-color: var(--primary-background-color);
+    height: 17px;
+    width: 17px;
+    margin-right: 10px;
+    border: 1.5px solid var(--secondary-text-color);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &.is-checked {
+      border-color: var(--primary-accent-color);
+      background-color: var(--primary-accent-color);
+    }
+
+    &.disabled {
+      border-color: var(--disabled-stroke-color);
+      background-color: var(--disabled-stroke-color);
+      cursor: default;
+    }
+  }
+
+  &-tick {
+    fill: var(--primary-text-color-alternate);
+
+    &.disabled {
+      fill: var(--disabled-background-color);
+    }
+  }
+
+  &__label {
+    display: flex;
+    margin-left: 0;
+    min-height: 18px;
+    align-items: flex-start;
+    cursor: pointer;
+    color: var(--primary-text-color);
+
+    &.is-bg-light {
+      color: var(--primary-text-color-alternate);
+    }
+
+    &.disabled {
+      color: var(--disabled-color);
+      cursor: default;
+    }
+
+    &-text {
+      padding-top: 1px;
+    }
+  }
+}

@@ -1,0 +1,68 @@
+@import "colours";
+
+:host {
+  width: 85px;
+  display: inline-block;
+}
+
+.quantity-input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__value {
+    color: var(--primary-text-color);
+    font-size: 13px;
+
+    &.disabled {
+      color: var(--disabled-stroke-color);
+    }
+  }
+
+  button {
+    height: 26px;
+    width: 26px;
+    background: none;
+    border: 0;
+    padding: 0;
+    outline: none;
+    cursor: pointer;
+
+    svg {
+      rect.quantity-input__button-fill {
+        fill: #28304b;
+      }
+
+      path.quantity-input__button-icon {
+        fill: #ffffff;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      svg {
+        rect.quantity-input__button-fill {
+          fill: #1a233e;
+        }
+      }
+    }
+
+    &[disabled] {
+      cursor: default;
+    }
+
+    &[disabled],
+    &[disabled]:hover,
+    &[disabled]:focus {
+      svg {
+        rect.quantity-input__button-fill {
+          fill: var(--disabled-background-color);
+        }
+
+        path.quantity-input__button-icon {
+          fill: var(--disabled-stroke-color);
+        }
+      }
+    }
+  }
+}

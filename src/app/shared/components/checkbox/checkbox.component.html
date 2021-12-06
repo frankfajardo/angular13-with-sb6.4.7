@@ -1,0 +1,54 @@
+<div class="checkbox">
+  <input
+    type="checkbox"
+    [name]="name"
+    [id]="name"
+    [checked]="value"
+    [disabled]="disabled"
+    (change)="onChange($any($event.target).checked)"
+  />
+  <label
+    class="checkbox__label"
+    [class.is-bg-light]="bgtheme === 'light'"
+    [class.is-bg-dark]="bgtheme === 'dark'"
+    [for]="name"
+    [class.disabled]="disabled"
+  >
+    <span class="checkbox__ui" [class.is-checked]="value" [class.disabled]="disabled" [attr.data-checked]="value">
+      <svg
+        *ngIf="value && checkMark === 'check'"
+        xmlns="http://www.w3.org/2000/svg"
+        width="12.501"
+        height="8.499"
+        viewBox="0 0 12.501 8.499"
+        [class.is-checked]="value"
+      >
+        <path
+          class="checkbox-tick"
+          transform="translate(2569.651 -335.785)"
+          d="M-2557.37,336a.75.75,0,0,1,0,1.061h0l-7,7a.75.75,0,0,1-1.061,0h0l-4-4a.75.75,0,0,1,0-1.06h0a.749.749,0,0,1,1.06,0h0l3.47,3.47,6.47-6.47A.752.752,0,0,1-2557.37,336Z"
+        />
+      </svg>
+      <svg
+        *ngIf="value && checkMark === 'dash'"
+        xmlns="http://www.w3.org/2000/svg"
+        width="10.419"
+        height="1.5"
+        viewBox="0 0 10.419 1.5"
+        class="check"
+        [class.is-checked]="value"
+      >
+        <path
+          class="checkbox-tick"
+          d="M-2576.687,246.2a.75.75,0,0,0-.75-.75h-8.919a.75.75,0,0,0-.75.75.75.75,0,0,0,.75.75h8.919A.75.75,0,0,0-2576.687,246.2Z"
+          transform="translate(2587.106 -245.454)"
+        />
+      </svg>
+    </span>
+
+    <span class="checkbox__label-text">
+      {{label}}
+      <ng-content></ng-content>
+    </span>
+  </label>
+</div>

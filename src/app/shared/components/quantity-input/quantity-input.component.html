@@ -1,0 +1,59 @@
+<span class="quantity-input">
+  <button
+    class="quantity-input__increase-button"
+    title="Increase"
+    (click)="onIncrease()"
+    [disabled]="disabled || increaseDisabled"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="26"
+      height="26"
+      viewBox="0 0 26 26"
+    >
+      <g transform="translate(2784.748 -270.582)">
+        <rect
+          class="quantity-input__button-fill"
+          width="26"
+          height="26"
+          rx="2"
+          transform="translate(-2784.748 270.582)"
+        />
+        <path
+          class="quantity-input__button-icon"
+          d="M-2772.5,288.582a.749.749,0,0,0,.776.723.749.749,0,0,0,.723-.723v-4.249h4.25a.75.75,0,0,0,.723-.776.749.749,0,0,0-.723-.723H-2771v-4.251a.75.75,0,0,0-.776-.723.75.75,0,0,0-.723.723v4.251h-4.25a.75.75,0,0,0-.723.776.75.75,0,0,0,.723.723h4.251Z"
+        />
+      </g>
+    </svg>
+  </button>
+  <span class="quantity-input__value" [class.disabled]="disabled">{{
+    value
+  }}</span>
+  <button
+    class="quantity-input__decrease-button"
+    title="Decrease"
+    (click)="onDecrease()"
+    [disabled]="disabled || decreaseDisabled"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="26"
+      height="26"
+      viewBox="0 0 26 26"
+    >
+      <g transform="translate(2756.441 -270.582)">
+        <rect
+          class="quantity-input__button-fill"
+          width="26"
+          height="26"
+          rx="2"
+          transform="translate(-2756.441 270.582)"
+        />
+        <path
+          class="quantity-input__button-icon"
+          d="M-2738.231,283.582a.75.75,0,0,0-.75-.75h-8.919a.75.75,0,0,0-.75.75.749.749,0,0,0,.75.75h8.919A.75.75,0,0,0-2738.231,283.582Z"
+        />
+      </g>
+    </svg>
+  </button>
+</span>
